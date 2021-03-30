@@ -10,6 +10,12 @@
 
 @import "_fonts.sass"
 
+*
+	outline: none
+
+.row
+	--bs-gutter-x: 0
+
 .row>*
 	padding-left: 0
 	padding-right: 0
@@ -42,9 +48,27 @@ body
 	font-weight: 500
 	color: #fff
 
-.contact-box
+.header_contact
 	margin-left: 90px
+
+.contact-box
 	width: 200px
 	text-align: right
+
+.orange-text
+	color: $orange
+
+.btn
+	font-family: Montserrat-Regular
+	font-size: 12px
+	line-height: 15px
+	color: #000
+	font-weight: 500
+
+.btn-o
+	background-color: $orange
+	border: 0
+	height: 38px
+	border-radius: 32px
 
 @import "_header.sass"
