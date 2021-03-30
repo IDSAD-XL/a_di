@@ -14,13 +14,15 @@ let path = {
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
 		css: source_folder + "/sass/style.sass",
+		csslibs: source_folder + "/csslibs/*.css",
 		js: source_folder + "/js/common.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
 	watch: {
 		html: source_folder + "/**/*.html",
-		css: source_folder + "/sass/*.sass",
+		css: source_folder + "/sass/*.{sass,scss}",
+		cssLibs: source_folder + "/cssLibs/",
 		js: source_folder + "/js/**/*.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 	},
@@ -103,6 +105,14 @@ function css() {
 		.pipe(browsersync.stream())
 }
 
+function cssLibs() {
+	return src(path.src.csslibs)
+		.pipe(concat("libs.min.css"))
+		.pipe(cssnano())
+		.pipe(dest(path.build.css))
+		.pipe(browsersync.stream())
+}
+
 function images() {
 	return src(path.src.img)
 		.pipe(
@@ -158,6 +168,7 @@ function cb() { }
 function watchfiles(params) {
 	gulp.watch([path.watch.html], html);
 	gulp.watch([path.watch.css], css);
+	gulp.watch([path.watch.cssLibs], cssLibs);
 	gulp.watch([path.watch.js], js);
 	gulp.watch([path.watch.img], images);
 }
@@ -166,7 +177,7 @@ function clean(params) {
 	return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, html, css, images, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, html, css, cssLibs, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchfiles, browserSync);
 
 exports.fontsStyle = fontsStyle;

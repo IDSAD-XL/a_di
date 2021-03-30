@@ -1,0 +1,47 @@
+header
+	position: relative
+	min-height: 100vh
+
+.header_inner
+	position: relative
+	height: 90vh
+	background: url(../img/header-bg.png) no-repeat center center
+	background-size: cover
+
+.header_inner:after
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0, 0, 0, 0.6)
+	z-index: 1
+
+.header_inner_content
+	height: 100%
+	width: 100%a
+	z-index: 2
+
+.header_menu
+	padding-top: 2.5rem
+
+.label-sm
+	position: relative
+	font-size: 9px
+	font-family: Montserrat-Regular
+	font-weight: 500
+	line-height: 11px
+	color: #fff
+
+.social-label:before
+	content: ''
+	position: absolute
+	width: 8px
+	height: 8px
+	margin-left: -18px
+	background: $orange
+	border-radius: 50%
+	filter: blur(1px)
+
+	

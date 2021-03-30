@@ -1,4 +1,6 @@
-@mixin font($font_name, $file_name, $weight, $style) 
+@import "_variables.scss"
+
+@mixin font($font_name, $file_name, $weight, $style)
 	@font-face
 		font-family: $font_name
 		font-display: swap
@@ -7,3 +9,42 @@
 		font-style: #{$style}
 
 @import "_fonts.sass"
+
+.row>*
+	padding-left: 0
+	padding-right: 0
+	padding-top: 0
+	padding-bottom: 0
+	--bs-gutter-x: 0
+
+body
+	background-color: #fff
+
+.social-wrapper
+	width: 200px
+	text-align: right
+
+.social-box
+	display: flex
+	flex-direction: row-reverse
+	margin: 10px 0
+
+.social-icon
+	object-fit: fill
+	padding: 0
+	height: 18px
+	width: 18px
+	margin-left: 12px
+
+.phone-label
+	font-size: 20px
+	font-family: Montserrat-Regular
+	font-weight: 500
+	color: #fff
+
+.contact-box
+	margin-left: 90px
+	width: 200px
+	text-align: right
+
+@import "_header.sass"
