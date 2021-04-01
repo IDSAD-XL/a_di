@@ -1,3 +1,6 @@
+
+
+//!======Slick slider in header
 $('#headerSlider').slick({
 	arrows: false,
 	dots: true,
@@ -13,3 +16,4 @@ $('#headerSlider').slick({
 		return '<div class="dot"></div>';
 	}
 });
+

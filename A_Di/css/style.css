@@ -13,6 +13,7 @@
 
 * {
   outline: none;
+  box-sizing: border-box;
 }
 
 .row {
@@ -29,6 +30,9 @@
 
 body {
   background-color: #fff;
+  color: #000;
+  font-family: Montserrat;
+  font-weight: 500;
 }
 
 .social-wrapper {
@@ -76,7 +80,20 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #D39742;
+}
+
+.btn-h-black:hover {
+  box-shadow: 0px 2px 10px #000000;
+}
+
+.btn-h-gold:hover {
+  box-shadow: 0px 0px 20px rgba(211, 151, 66, 0.67);
 }
 
 .btn-o {
@@ -84,6 +101,12 @@ body {
   border: 0;
   height: 38px;
   border-radius: 32px;
+  width: 170px;
+}
+
+.heading-sec {
+  letter-spacing: 0.1em;
+  font-weight: 600;
 }
 
 header {
@@ -217,12 +240,6 @@ header {
   padding: 24px 50px;
 }
 
-.header_callback_content form {
-  height: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .callback__left,
 .callback__right,
 .callback__right > form {
@@ -231,12 +248,21 @@ header {
   flex-direction: column;
 }
 
-.callback_form input {
-  border: 0;
+.callback__left h4,
+.callback__left h6 {
+  line-height: 1.5em;
+  font-weight: 600;
 }
 
-.callback_form_btn {
-  min-width: 170px;
+.callback_form {
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.callback_form input {
+  width: 150px;
+  border: 0;
 }
 
 .callback_form__tel:before {
@@ -247,4 +273,97 @@ header {
   width: 20px;
   height: 20px;
   background-image: url(../images/icons/ru-flag.svg);
+}
+
+.advantages {
+  position: relative;
+}
+
+.advantages:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 13px;
+  background: linear-gradient(263.63deg, #000000 2.69%, #D39742 171.43%);
+}
+
+.advantages__heading {
+  text-align: center;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.advantages__item img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100px;
+}
+
+.advantages__item span {
+  margin-top: 30px;
+}
+
+.advantages_icons {
+  position: relative;
+  margin-top: 60px;
+  padding-bottom: 60px;
+}
+
+.comand {
+  padding-top: 60px;
+}
+
+.comand_left {
+  text-align: left;
+}
+
+.comand_left .heading-sec {
+  margin-bottom: 48px;
+}
+
+.comand_left .comand_left__text {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  padding-right: 20%;
+  margin-bottom: 38px;
+}
+
+#comandDropArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed #000000;
+  height: 100%;
+  width: 278px;
+}
+
+#comandDropArea label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-area_icon {
+  text-align: center;
+}
+
+.comand__img-upload {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
