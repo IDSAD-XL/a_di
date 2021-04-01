@@ -132,6 +132,12 @@ header {
   min-height: 100vh;
 }
 
+.header_scrolling {
+  position: absolute;
+  bottom: 17px;
+  left: 0;
+}
+
 .header_inner {
   position: relative;
   height: 90vh;
@@ -356,7 +362,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dashed #000000;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23000000B3' stroke-width='2' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
 #comandDropArea label {
@@ -474,18 +480,36 @@ header {
 .tap-hint {
   position: absolute;
   text-align: center;
-  top: -25px;
-  left: -150px;
+  top: -5%;
+  left: -21%;
+  font-size: 13px;
 }
 
-.interactive__line,
 .interactive__hint {
   position: absolute;
 }
 
+.interactive__hint {
+  font-size: 13px;
+}
+
 .tap-hint-line {
-  top: 65px;
-  left: 30px;
+  top: 12%;
+  left: 2%;
   width: 20%;
   height: 19%;
+}
+
+#bathroomHint {
+  top: 20%;
+  right: -35%;
+  max-width: 300px;
+}
+
+#bathroomLine {
+  top: 38%;
+  right: 10%;
+  width: 20%;
+  height: 18%;
+  transform: rotate(120deg);
 }
