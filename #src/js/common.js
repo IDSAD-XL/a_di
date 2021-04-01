@@ -7,7 +7,7 @@ $('#headerSlider').slick({
 	infinite: true,
 	vertical: true,
 	autoplay: true,
-	autoplaySpeed: 3000,
+	autoplaySpeed: 4000,
 	touchMove: false,
 	swipe: false,
 	adaptiveHeight: true,

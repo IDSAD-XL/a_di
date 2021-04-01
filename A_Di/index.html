@@ -12,14 +12,14 @@
 <body>
 	<header>
 	<div class="header_inner">
-		<div class="header_inner_content container-lg">
-			<nav class="navbar fixed-top navbar-light header_menu">
-				<div class="container-lg">
-					<div class="header_logo">
+		<div class="header_inner_content container-xl">
+			<nav class="fixed-top header_menu justify-content-center d-flex">
+				<div class="navbar_inner col-10 d-flex">
+					<div class="header_logo flex-grow-1">
 						<img src="img/logo.svg" alt="">
 					</div>
 					<div class="d-flex">
-						<div class="haeder_social social-wrapper">
+						<div class="header_social social-wrapper">
 							<div class="row">
 								<span class="label-sm social-label">
 									Напишите нам напрямую
@@ -47,7 +47,7 @@
 					</div>
 				</div>
 			</nav>
-			<div class="header_slider_wrapper">
+			<div class="header_slider_wrapper col-10 mx-auto">
 				<div class="header_slider" id="headerSlider">
 					<div class="header_slider__item">
 						<h2>
@@ -90,7 +90,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="header_callback">
+			<div class="header_callback col-10">
 				<div class="header_callback_content row">
 					<div class="callback__left col-8">
 						<h4>
@@ -127,11 +127,11 @@
 	</div>
 </header>
 	<section class="advantages">
-	<div class="container-lg">
+	<div class="container-xl">
 		<div class="row">
-			<h3 class="heading-sec advantages__heading">Наши преимущества</h3>
+			<h3 class="heading-sec text-center">Наши преимущества</h3>
 		</div>
-		<div class="row advantages_icons">
+		<div class="row advantages_icons mx-auto justify-content-between">
 			<div class="col advantages__item">
 				<img src="img/advantages/hammer.svg" alt="">
 				<span>
@@ -162,12 +162,13 @@
 	</div>
 </section>
 	<section class="comand">
-	<div class="container-lg">
+	<div class="container-xl">
 		<form action="">
-			<div class="row">
-				<div class="col-7 comand_left">
+			<div class="row mx-auto justify-content-between">
+				<div class="col-1"></div>
+				<div class="col-6 comand_left">
 					<div class="row comand_left__heading">
-						<h3 class="heading-sec">Почему именно наша команда ?</h3>
+						<h3 class="heading-sec">Почему именно наша команда&NonBreakingSpace;?</h3>
 					</div>
 					<div class="row comand_left__text">
 						<p>
@@ -188,21 +189,55 @@
 						<button type="submit" class="btn btn-o btn-h-black">Оставить заявку</button>
 					</div>
 				</div>
-				<div class="col comand_right">
-					<div id="comandDropArea" class="mx-auto">
-						<input id="comandImgUpl" class="comand__img-upload" type="file" accept="image/*"
-							required></input>
-						<label for="comandImgUpl">
-							<div class="drop-area_icon">
-								<img src="img/icons/chrome.svg" alt="">
-								<br>
-								<span>Фото</span>
-							</div>
-						</label>
-					</div>
+				<div class="col-1"></div>
+				<div id="comandDropArea" class="col-3">
+					<input id="comandImgUpl" class="comand__img-upload" type="file" accept="image/*" required></input>
+					<label for="comandImgUpl">
+						<div class="drop-area_icon">
+							<img src="img/icons/chrome.svg" alt="">
+							<br>
+							<span>Фото</span>
+						</div>
+					</label>
 				</div>
+				<div class="col-1"></div>
 			</div>
 		</form>
+	</div>
+</section>
+	<section class="interactive">
+	<div class="container-xl">
+		<div class="row">
+			<h3 class="heading-sec text-center">Для чего вам нужен дизайн <span class="orange-underline">проект
+					?!</span></h3>
+		</div>
+		<div class="row interactive_content">
+			<div class="interactive_house_wrapper">
+				<img class="interactive_house__img" src="img/interactive_house.png" alt="">
+				<div id="plusBedroom" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusMeeting" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusKitchen" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusKidroom" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusBalcon" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusBathroom" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div class="tap-hint">
+					<img src="img/icons/tap.svg" alt="">
+					<br>
+					<span>
+						Наведите на элемент <br>
+						что бы узнать <br>
+						подробнее
+					</span>
+				</div>
+				<img class="interactive__line tap-hint-line" src="img/icons/or-line.png" alt="">
+				<div id="bathroomHint" class="interactive__hint bathroom-hint">
+					Ванная может гармонировать с другими комнатами или быть обособленной.
+					Оптимальный проект поможет скрыть недостатки.
+					Разрабатывая концепт важно учесть детали от подсветки потолка до элементов декора
+				</div>
+				<img class="interactive__line bathroom-hint" src="img/icons/or-line.png" alt="">
+			</div>
+		</div>
 	</div>
 </section>
 	<script src="js/jquery.min.js"></script>
