@@ -127,6 +127,18 @@ body {
   background-color: #D39742;
 }
 
+.info-text_wrapper p {
+  font-size: 10px;
+  line-height: 1.5em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.info-text_wrapper .orange-text {
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
 header {
   position: relative;
   min-height: 100vh;
@@ -270,12 +282,6 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.callback__left h4,
-.callback__left h6 {
-  line-height: 1.5em;
-  font-weight: 600;
 }
 
 .callback_form {
@@ -467,7 +473,7 @@ header {
   top: 23.5%;
 }
 
-#plusBalcon {
+#plusBalcony {
   left: 34%;
   top: 76.5%;
 }
@@ -512,4 +518,42 @@ header {
   width: 20%;
   height: 18%;
   transform: rotate(120deg);
+}
+
+.portfolio {
+  background: linear-gradient(258.65deg, #000000 70.81%, #D39742 186.81%);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.58);
+  padding: 30px 0;
+}
+
+.portfolio_text {
+  color: #fff;
+}
+
+.get_link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.get_link__num {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+}
+
+.get_link__tel {
+  height: 25px;
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+}
+
+.portfolio_photo_wrapper {
+  position: relative;
+}
+
+.portfolio_photo_wrapper img {
+  position: absolute;
+  margin-top: -100px;
 }
