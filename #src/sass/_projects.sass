@@ -1,0 +1,128 @@
+.projects
+	padding-top: 80px
+
+.projects
+	overflow-x: hidden
+
+.projects_heading
+	padding-bottom: 50px
+
+.projects_heading span
+	position: relative
+
+.projects_heading span:after
+	content: ''
+	position: absolute
+	top: 50%
+	left: calc( 100% + 45px )
+	width: 9999px
+	height: 2px
+	background-color: $orange
+
+.projects_types_image-group
+	margin-bottom: 40px
+
+.project_types__image-block
+	position: relative
+	img
+		width: 100%
+		filter: drop-shadow(0px 3px 20px rgba(0, 0, 0, 0.85))
+
+.project_types_description-block
+	padding: 17px 0
+
+.project_types_description_inner
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background-color: #000
+	height: 100%
+	color: #fff
+	padding-top: 20px
+	background: linear-gradient(110.14deg, #000000 58.36%, #D39742 280.56%)
+	box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.58)
+
+.project_types_description__title
+	text-align: center
+
+.project_types_description__list
+	display: flex
+	align-items: center
+	font-size: 12px
+	line-height: 12px
+	letter-spacing: 0.02em
+	ul
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 100%
+		padding-top: 20px
+		padding-bottom: 20px
+	li
+		list-style: none
+		position: relative
+	li:before
+		content: ''
+		position: absolute
+		width: 4px
+		height: 4px
+		top: 50%
+		transform: translateY(-50%)
+		margin-left: -18px
+		background: $orange
+		border-radius: 50%
+		filter: blur(1px)
+
+.project_types_description__price
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	bottom: -24px
+	background-color: #fff
+	height: 36px
+	width: 187px
+	color: #000
+	box-shadow: 0px 0px 5px #000000
+	border-radius: 5px
+	left: 50%
+	transform: translateX(-50%)
+	font-size: 21px
+	font-weight: bold
+	letter-spacing: 0.03em
+
+.projects_realization
+	margin: 0 -15px
+	margin-bottom: 50px
+
+.projects_realization__item
+	position: relative
+	padding: 0 15px
+	z-index: 1
+	img
+		width: 100%
+
+.projects_realization__item:nth-child(1):after
+	content: ''
+	position: absolute
+	width: calc(100% - 30px)
+	height: 100%
+	top: 0
+	left: 15px
+	background-color: #000
+	opacity: 0.8
+	z-index: 2
+
+.projects_realization__item
+	display: flex
+	justify-content: center
+	align-items: center
+	button
+		z-index: 3
+		position: absolute
+
+.projects_realization__item_label
+	position: absolute
+	bottom: -8px
+	z-index: 3

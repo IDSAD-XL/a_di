@@ -2,12 +2,12 @@
 	<div class="header_inner">
 		<div class="header_inner_content container-xl">
 			<img class="header_scrolling" src="img/icons/Scroling.svg" alt="">
-			<nav class="fixed-top header_menu justify-content-center d-flex">
-				<div class="navbar_inner col-10 d-flex">
-					<div class="header_logo flex-grow-1">
+			<nav class="fixed-top header_menu container-xl">
+				<div class="navbar_inner row justify-content-between">
+					<div class="header_logo col-2 flex-grow-1">
 						<img src="img/logo.svg" alt="">
 					</div>
-					<div class="d-flex">
+					<div class="col d-flex">
 						<div class="header_social social-wrapper">
 							<div class="row">
 								<span class="label-sm social-label">
@@ -34,6 +34,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-1"></div>
 				</div>
 			</nav>
 			<div class="header_slider_wrapper col-10 mx-auto">
@@ -80,8 +81,9 @@
 				</div>
 			</div>
 			<div class="header_callback col-10">
-				<div class="header_callback_content row">
-					<div class="callback__left col-8 info-text_wrapper">
+				<div class="header_callback_content row justify-content-between">
+					<div class="col-1"></div>
+					<div class="callback__left col-7 info-text_wrapper">
 						<h5>
 							Оставьте заявку на полную консультацию
 							с нашим специалистом и получите скидку&NonBreakingSpace;<span
@@ -94,19 +96,19 @@
 							Скидка дейтвует ровно 30 дней после подтверждения заявки*
 						</p>
 					</div>
-					<div class="callback__right col">
-						<form class="callback_form" action="">
-							<div class="callback__right__item">
+					<div class="callback__right col-4">
+						<form class="callback_form col-6" action="">
+							<div class="callback__right__item col-12">
 								<label for="headerFormTel"><img src="img/icons/ru-flag.svg" alt=""></label>
-								<input id="headerFormTel" class="callback_form__tel" type="tel" required>
+								<input id="headerFormTel" class="callback_form__tel col-12" type="tel" required>
 							</div>
-							<div class="callback__right__item">
+							<div class="callback__right__item col-12">
 								<label for="headerFormName"><img src="img/icons/user.svg" alt=""></label>
-								<input id="headerFormName" class="callback_form__name" type="text"
+								<input id="headerFormName" class="callback_form__name col-12" type="text"
 									placeholder="Введите имя" required maxlength="30">
 							</div>
 
-							<button class="callback_form_btn btn btn-o btn-h-black" type="submit">Оставить
+							<button class="callback_form_btn col-12 btn btn-o btn-h-black" type="submit">Оставить
 								заявку</button>
 						</form>
 					</div>
