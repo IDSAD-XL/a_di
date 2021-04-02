@@ -798,3 +798,40 @@ header {
 .realization_calculator_button-wrapper span a {
   color: #000;
 }
+
+.designs_slider {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  height: 250px;
+}
+
+.designs_slider .designs_slider__item {
+  position: relative;
+  padding: 0 10px;
+  transition: .2s;
+}
+
+.designs_slider img {
+  max-width: 100%;
+}
+
+.designs_slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+  height: 38px;
+  width: 18px;
+  border: 0;
+}
+
+.designs_slider .slick-prev {
+  background: url(../img/icons/slider-arrow.svg) no-repeat;
+  left: -36px;
+}
+
+.designs_slider .slick-next {
+  background: url(../img/icons/slider-arrow.svg) no-repeat;
+  transform: rotate(180deg);
+  right: -36px;
+}

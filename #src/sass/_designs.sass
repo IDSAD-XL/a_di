@@ -1,0 +1,56 @@
+// .designs_slider
+// 	display: flex
+// 	align-items: center
+// 	min-width: 0
+// 	min-height: 250px
+// 	.slick-slide
+// 		transition: .2s
+// 		min-width: 0
+// 		margin: 0 15px
+// 		img
+// 			transition: .2s
+// 			margin-top: 85px
+// 			max-height: 100%
+// 			max-width: 100%
+// 			max-width: 174px
+// 			max-height: 120px
+
+// 	.slick-center
+// 		width: 600px
+// 		max-height: 250px
+// 		img
+// 			margin-top: 0px
+// 			max-width: 600px
+// 			max-height: none
+
+.designs_slider
+	display: flex
+	align-items: center
+	min-width: 0
+	height: 250px
+	.designs_slider__item
+		position: relative
+		padding: 0 10px
+		transition: .2s
+	img
+		max-width: 100%
+	.slick-center
+		
+.designs_slider
+	.slick-arrow
+		position: absolute
+		font-size: 0
+		z-index: 10
+		height: 38px
+		width: 18px
+		border: 0
+
+	.slick-prev
+		background: url(../img/icons/slider-arrow.svg) no-repeat
+		left: -36px
+	.slick-next
+		background: url(../img/icons/slider-arrow.svg) no-repeat
+		transform: rotate(180deg)
+		right: -36px
+
+.designs_slider__item

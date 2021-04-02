@@ -12,13 +12,22 @@ $('#headerSlider').slick({
 	swipe: false,
 	adaptiveHeight: true,
 	customPaging: function (slider, i) {
-		var thumb = $(slider.$slides[i]).data('thumb');
+		let thumb = $(slider.$slides[i]).data('thumb');
 		return '<div class="dot"></div>';
 	}
 });
 
+$('#designsSlider').slick({
+	centerMode: true,
+	arrows: true,
+	dots: false,
+	infinite: true,
+	slidesToShow: 3,
+	centerPadding: '60px',
+})
 
 $('#realizationCalcPlanUpload').on('change', function () {
 	let name = this.files[0].name;
+	// alert(name)
 	$('#realizationUploadedPlanName').text(name);
 })
