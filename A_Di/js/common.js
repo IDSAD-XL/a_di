@@ -17,3 +17,8 @@ $('#headerSlider').slick({
 	}
 });
 
+
+$('#realizationCalcPlanUpload').on('change', function () {
+	let name = this.files[0].name;
+	$('#realizationUploadedPlanName').text(name);
+})
