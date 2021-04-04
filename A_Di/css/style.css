@@ -209,7 +209,8 @@ header {
 }
 
 .header_menu {
-  padding-top: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .label-sm {
@@ -339,6 +340,10 @@ header {
 
 .callback__right__item {
   display: flex;
+}
+
+.header_dark {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .advantages {
@@ -539,10 +544,19 @@ header {
 
 .interactive__hint {
   position: absolute;
+  transition: .3s;
 }
 
 .interactive__hint {
   font-size: 13px;
+}
+
+.interactive__hint.hide {
+  opacity: 0;
+}
+
+.interactive__hint.active {
+  opacity: 1;
 }
 
 .tap-hint-line {
@@ -550,6 +564,14 @@ header {
   left: 2%;
   width: 20%;
   height: 19%;
+}
+
+.tap-hint.hide {
+  opacity: 1;
+}
+
+.tap-hint-line.hide {
+  opacity: 1;
 }
 
 #bathroomHint {
@@ -1094,12 +1116,16 @@ header {
   text-align: right;
 }
 
+.footer_callback_wrapper {
+  position: relative;
+}
+
 .footer_callback {
   background-color: #fff;
   height: 174px;
   z-index: 3;
   position: absolute;
-  top: -130px;
+  top: -250px;
   left: 50%;
   transform: translateX(-50%);
   bottom: -62px;

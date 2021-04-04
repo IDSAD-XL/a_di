@@ -17,6 +17,8 @@ $('#headerSlider').slick({
 	}
 });
 
+
+//!========Slick slider in Designs
 $('#designsSlider').slick({
 	centerMode: true,
 	arrows: true,
@@ -26,8 +28,18 @@ $('#designsSlider').slick({
 	centerPadding: '60px',
 })
 
+//!======File upload in calculator
 $('#realizationCalcPlanUpload').on('change', function () {
 	let name = this.files[0].name;
 	// alert(name)
 	$('#realizationUploadedPlanName').text(name);
 })
+
+//!=====Ineractive house
+
+$('.interactive_plus').on('mouseenter', function () {
+	let hintClass = $(this).attr('hint-class');
+	$('.interactive__hint').addClass('hide').removeClass('active')
+	$(`.${hintClass}`).addClass('active').removeClass('hide')
+})
+

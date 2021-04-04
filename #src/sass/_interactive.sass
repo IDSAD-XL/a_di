@@ -78,15 +78,28 @@
 
 .interactive__hint
 	position: absolute
+	transition: .3s
 
 .interactive__hint
 	font-size: 13px
+
+.interactive__hint.hide
+	opacity: 0
+
+.interactive__hint.active
+	opacity: 1
 
 .tap-hint-line
 	top: 12%
 	left: 2%
 	width: 20%
 	height: 19%
+
+.tap-hint.hide
+	opacity: 1
+
+.tap-hint-line.hide
+	opacity: 1
 
 #bathroomHint
 	top: 20%

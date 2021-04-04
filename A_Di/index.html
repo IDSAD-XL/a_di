@@ -14,8 +14,8 @@
 	<div class="header_inner">
 		<div class="header_inner_content container-xl">
 			<img class="header_scrolling" src="img/icons/Scroling.svg" alt="">
-			<nav class="fixed-top header_menu container-xl">
-				<div class="navbar_inner row justify-content-between">
+			<nav class="fixed-top header_menu header_dark">
+				<div class="navbar_inner container-xl mx-auto row justify-content-between">
 					<div class="header_logo col-2 flex-grow-1">
 						<img src="img/logo.svg" alt="">
 					</div>
@@ -223,7 +223,8 @@
 				<div id="plusKitchen" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
 				<div id="plusKidroom" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
 				<div id="plusBalcony" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
-				<div id="plusBathroom" class="interactive_plus"><img src="img/icons/plus.svg" alt=""></div>
+				<div id="plusBathroom" hint-class="bathroom-hint" class="interactive_plus"><img src="img/icons/plus.svg"
+						alt=""></div>
 				<div class="interactive__hint tap-hint">
 					<img src="img/icons/tap.svg" alt="">
 					<br>
@@ -234,12 +235,15 @@
 					</span>
 				</div>
 				<img class="interactive__hint tap-hint-line" src="img/icons/or-line.png" alt="">
-				<div id="bathroomHint" class="interactive__hint bathroom-hint">
+				<!-- Bathroom hint-->
+				<div id="bathroomHint" class="interactive__hint bathroom-hint hide">
 					Ванная может гармонировать с другими комнатами или быть обособленной.
 					Оптимальный проект поможет скрыть недостатки.
 					Разрабатывая концепт важно учесть детали от подсветки потолка до элементов декора
 				</div>
-				<img id="bathroomLine" class="interactive__hint bathroom-hint" src="img/icons/or-line.png" alt="">
+				<img id="bathroomLine" class="interactive__hint bathroom-hint hide" src="img/icons/or-line.png" alt="">
+				<!-- Bedroom hint-->
+
 			</div>
 		</div>
 	</div>
@@ -648,34 +652,35 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-8 footer_callback">
-			<div class="header_callback_content row justify-content-between">
-				<div class="col-1"></div>
-				<div class="callback__left col-7 info-text_wrapper">
-					<h5>
-						Оставьте заявку для того что бы скачать договор
-						и ознакомиться с ним целиком
-					</h5>
-					<p>
-						Специалист ответит на заявку в течение 10 минут*
-					</p>
-				</div>
-				<div class="callback__right col-4">
+		<div class="row footer_callback_wrapper">
+			<div class="col-8 footer_callback">
+				<div class="header_callback_content row justify-content-between">
+					<div class="col-1"></div>
+					<div class="callback__left col-7 info-text_wrapper">
+						<h5 class="mb-4">
+							Оставьте заявку для того что бы скачать договор
+							и ознакомиться с ним целиком
+						</h5>
+						<p>
+							Специалист ответит на заявку в течение 10 минут*
+						</p>
+					</div>
+					<div class="callback__right col-4">
+						<form class="callback_form col-8" action="">
+							<div class="callback__right__item col-12 mb-3">
+								<label for="headerFormTel"><img src="img/icons/ru-flag.svg" alt=""></label>
+								<input id="headerFormTel" class="callback_form__tel col-12" type="tel" required>
+							</div>
+							<div class="callback__right__item col-12 mb-3">
+								<label for="headerFormName"><img src="img/icons/user.svg" alt=""></label>
+								<input id="headerFormName" class="callback_form__name col-12" type="text"
+									placeholder="Введите имя" required maxlength="30">
+							</div>
 
-					<form class="callback_form col-6" action="">
-						<div class="callback__right__item col-12">
-							<label for="headerFormTel"><img src="img/icons/ru-flag.svg" alt=""></label>
-							<input id="headerFormTel" class="callback_form__tel col-12" type="tel" required>
-						</div>
-						<div class="callback__right__item col-12">
-							<label for="headerFormName"><img src="img/icons/user.svg" alt=""></label>
-							<input id="headerFormName" class="callback_form__name col-12" type="text"
-								placeholder="Введите имя" required maxlength="30">
-						</div>
-
-						<button class="callback_form_btn col-12 btn btn-o btn-h-black" type="submit">Оставить
-							заявку</button>
-					</form>
+							<button class="callback_form_btn col-12 btn btn-o btn-h-black" type="submit">Оставить
+								заявку</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
