@@ -1,0 +1,88 @@
+.steps
+	overflow-x: hidden
+	padding-top: 70px
+.steps_title
+	position: relative
+
+.steps_name
+	position: relative
+	line-height: 50px
+	font-size: 21px
+
+.steps_name:first-letter
+	font-size: 25px
+
+.steps_name_inner
+	position: absolute
+	left: calc(100% + 20px)
+	background: #000000
+	border-radius: 30px 0px 0px 30px
+	width: 9999px
+	height: 50px
+	padding-left: 32px
+	color: $orange
+
+.steps_title_image
+	position: absolute
+	right: 0
+	top: -65px
+
+.steps_content_wrapper
+	position: relative
+	padding-top: 60px
+
+.steps_content_item
+	display: flex
+	flex-direction: row
+	padding-bottom: 45px
+	&:last-child
+		padding-bottom: 0
+
+.steps_content_item_number_wrapper
+	position: relative
+	margin-right: 50px
+	font-weight: 500
+
+.steps_content_wrapper .steps_content_item_number_wrapper::after
+	content: ''
+	background-color: $orange
+	position: absolute
+	left: 50%
+	margin-top: 12px
+	height: calc( 100% - 24px)
+	width: 2px
+
+.steps_content_wrapper .steps_content_item:last-child
+	.steps_content_item_number_wrapper::after
+		display: none
+
+.steps_content_item_number_box
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	background-color: #000
+	box-shadow: 0px 0px 10px #000000
+	font-size: 25px
+
+.steps_content_text_title
+
+.steps_content_text_text
+	font-size: 15px
+
+.steps_viber-image
+	position: absolute
+	width: 50px
+	height: 50px
+	right: 0
+	bottom: 50px
+	cursor: pointer
+	path
+		transition: .2s
+	&:hover
+		path:first-child
+			fill: #000
