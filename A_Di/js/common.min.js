@@ -23,7 +23,7 @@ $('#designsSlider').slick({
 	centerMode: true,
 	arrows: true,
 	dots: false,
-	infinite: true,
+	infinite: false,
 	slidesToShow: 3,
 	centerPadding: '60px',
 })
@@ -40,6 +40,8 @@ $('#realizationCalcPlanUpload').on('change', function () {
 $('.interactive_plus').on('mouseenter', function () {
 	let hintClass = $(this).attr('hint-class');
 	$('.interactive__hint').addClass('hide').removeClass('active')
+	$('.interactive_plus').removeClass('active')
+	$(this).addClass('active')
 	$(`.${hintClass}`).addClass('active').removeClass('hide')
 })
 

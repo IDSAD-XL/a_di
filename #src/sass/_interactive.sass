@@ -1,5 +1,7 @@
 .interactive
 	padding-top: 60px
+	padding-bottom: 60px
+	overflow-x: hidden
 
 .interactive_content
 	display: flex
@@ -35,7 +37,7 @@
 		height: 28px
 		top: -3px
 		left: -3px
-		background-color: #000
+		background: #000
 		z-index: 1
 		filter: blur(3px)
 		border-radius: 50%
@@ -45,6 +47,10 @@
 	&:hover:after
 		background: $orange
 
+.interactive_plus.active
+	background: linear-gradient(272.84deg, #D39742 -7.26%, #FFFFFF 206.33%)
+	&::after
+		background: $orange
 #plusBedroom
 	top: 29%
 	left: 70%
@@ -112,3 +118,63 @@
 	width: 20%
 	height: 18%
 	transform: rotate(120deg)
+
+#bedroomHint
+	top: 2%
+	right: -45%
+	max-width: 300px
+
+#bedroomLine
+	top: 20%
+	right: 1%
+	width: 20%
+	height: 18%
+	transform: rotate(120deg)
+
+#kidroomHint
+	top: 0
+	right: -37%
+	max-width: 300px
+
+#kidroomLine
+	top: 0
+	right: 10%
+	width: 20%
+	height: 18%
+	transform: rotate(-50deg)
+
+#meetingHint
+	top: 45%
+	right: -22%
+	max-width: 300px
+
+#meetingLine
+	top: 59%
+	right: 25%
+	width: 20%
+	height: 18%
+	transform: rotate(135deg)
+
+#balconyHint
+	top: 65%
+	right: -15%
+	max-width: 300px
+
+#balconyLine
+	top: 75%
+	right: 30%
+	width: 20%
+	height: 18%
+	transform: rotate(120deg)
+
+#kitchenHint
+	top: 65%
+	left: -30%
+	max-width: 300px
+
+#kitchenLine
+	top: 50%
+	left: -10%
+	width: 15%
+	height: 18%
+	transform: rotate(-70deg)
