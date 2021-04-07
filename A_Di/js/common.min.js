@@ -1,6 +1,8 @@
 //!======Input masks
 $('#headerFormTel').mask('+7(000) 000-00-00');
 $('#footerFormTel').mask('+7(000) 000-00-00');
+$('#getLinkFormTel').mask('+7(000) 000-00-00');
+$('#modalTel').mask('+7(000) 000-00-00');
 
 //!=====Modal
 let cbModal = new bootstrap.Modal(document.getElementById('modalCallback'));

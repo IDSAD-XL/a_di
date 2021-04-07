@@ -31,7 +31,7 @@
 body {
   background-color: #fff;
   color: #000;
-  font-family: Montserrat;
+  font-family: Montserrat-Regular, sans-serif;
   font-weight: 500;
 }
 
@@ -61,7 +61,7 @@ body.modal-open {
 
 .phone-label a {
   font-size: 20px;
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Regular, sans-serif;
   font-weight: 500;
   color: #fff;
   text-decoration: none;
@@ -81,7 +81,7 @@ body.modal-open {
 }
 
 .btn {
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Regular, sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #000;
@@ -234,7 +234,7 @@ header {
 .label-sm {
   position: relative;
   font-size: 9px;
-  font-family: Montserrat-Regular;
+  font-family: Montserrat-Regular, sans-serif;
   font-weight: 500;
   line-height: 11px;
   color: #fff;
@@ -1230,7 +1230,7 @@ header {
 .footer_callback {
   background-color: #fff;
   height: 174px;
-  z-index: 1;
+  z-index: 1a;
   position: absolute;
   top: -250px;
   left: 50%;
