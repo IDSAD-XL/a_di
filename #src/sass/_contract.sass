@@ -1,3 +1,17 @@
+.contract
+	@media screen and ( max-width: 576px )
+		.contract_previews
+			margin-top: 10px
+			padding-left: 0
+		.contract_previews_item
+			margin: 10px 0
+			padding: 0
+
+		.contract_previews_top .contract_previews_item:first-child, .contract_previews_down .contract_previews_item:first-child
+			padding-right: 10px
+		.contract_previews_top .contract_previews_item:last-child, .contract_previews_down .contract_previews_item:last-child
+			padding-left: 10px
+
 .contract_opened-image
 	max-height: 475px
 	display: flex
@@ -10,6 +24,9 @@
 
 .contract_previews
 	padding-left: 15px
+
+.contract_previews_item, .contract_opened-image
+	cursor: pointer
 
 .contract_previews_item
 	position: relative

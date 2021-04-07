@@ -8,34 +8,19 @@ let cbModal = new bootstrap.Modal(document.getElementById('modalCallback'));
 function showModal() {
 	cbModal.show()
 }
-setTimeout(showModal, 5000);
+// setTimeout(showModal, 5000);
 let cbModalHtml = document.getElementById('modalCallback')
 let cbModalForm = document.getElementById('modalCbForm');
 cbModalForm.addEventListener('submit', function () {
 	cbModal.hide()
 })
 
-let des = $('#designsSeeCatalog');
-let globalURL;
-
 function goToPage(url) {
 	cbModal.show()
-	globalURL = url
+	cbModalForm.addEventListener('submit', function () {
+		window.open(url)
+	})
 }
-
-function openNewSite() {
-	window.location = globalURL
-}
-
-let catalogButton = document.getElementById('designsSeeCatalog')
-catalogButton.addEventListener('click', function () {
-	cbModal.show()
-	globalURL = 'https://sites.google.com/view/adiart-studio/%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0'
-})
-
-cbModalForm.addEventListener('submit', function () {
-	openNewSite()
-})
 //!======Slick slider in header
 
 $('#headerSlider').slick({
@@ -65,6 +50,15 @@ $('#designsSlider').slick({
 	slidesToShow: 3,
 	initialSlide: headerSliderCenter,
 	centerPadding: '60px',
+	responsive: [
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				centerMode: false,
+			}
+		}
+	]
 })
 
 //!======File upload in calculator
@@ -75,7 +69,6 @@ $('#realizationCalcPlanUpload').on('change', function () {
 })
 
 //!=====Ineractive house
-
 $('.interactive_plus').on('mouseenter', function () {
 	let hintClass = $(this).attr('hint-class');
 	$('.interactive__hint').addClass('hide').removeClass('active')
@@ -83,4 +76,3 @@ $('.interactive_plus').on('mouseenter', function () {
 	$(this).addClass('active')
 	$(`.${hintClass}`).addClass('active').removeClass('hide')
 })
-

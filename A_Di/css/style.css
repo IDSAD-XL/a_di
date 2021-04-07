@@ -59,11 +59,12 @@ body.modal-open {
   margin-left: 12px;
 }
 
-.phone-label {
+.phone-label a {
   font-size: 20px;
   font-family: Montserrat-Regular;
   font-weight: 500;
   color: #fff;
+  text-decoration: none;
 }
 
 .header_contact {
@@ -173,7 +174,7 @@ body.modal-open {
   width: 90%;
   height: 2px;
   left: 5%;
-  bottom: -10px;
+  bottom: -5px;
   background-color: #D39742;
 }
 
@@ -731,11 +732,8 @@ header {
 }
 
 .projects {
-  padding-top: 80px;
-}
-
-.projects {
   overflow-x: hidden;
+  padding-top: 80px;
 }
 
 .projects_heading {
@@ -1030,6 +1028,10 @@ header {
   padding-top: 70px;
 }
 
+.steps_name.mobile {
+  display: none;
+}
+
 .steps_wrapper {
   position: relative;
 }
@@ -1152,6 +1154,11 @@ header {
   padding-left: 15px;
 }
 
+.contract_previews_item,
+.contract_opened-image {
+  cursor: pointer;
+}
+
 .contract_previews_item {
   position: relative;
   padding: 0 15px;
@@ -1223,12 +1230,11 @@ header {
 .footer_callback {
   background-color: #fff;
   height: 174px;
-  z-index: 3;
+  z-index: 1;
   position: absolute;
   top: -250px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -62px;
   box-shadow: 5px 0px 25px rgba(0, 0, 0, 0.58);
   border-radius: 20px;
   display: flex;
@@ -1297,4 +1303,188 @@ header {
 #modalCbForm button {
   margin-bottom: 26px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    min-height: calc( 100vh + 250px);
+  }
+
+  header .header_menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  header .header_inner {
+    height: calc( 80vh + 250px);
+  }
+
+  header .social-wrapper,
+  header .contact-box {
+    width: 50%;
+  }
+
+  header .social-wrapper,
+  header .header_contact {
+    text-align: left;
+  }
+
+  header .header_contact {
+    margin-left: 0;
+  }
+
+  header .social-box {
+    flex-direction: row;
+  }
+
+  header .header_callback {
+    left: 0;
+  }
+
+  header .info-text_wrapper p {
+    display: none;
+  }
+
+  header .info-text_wrapper h5 {
+    font-size: 15px;
+  }
+
+  header .header_slider__item h2 {
+    font-size: 20px;
+  }
+
+  header .header_slider__item p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  header .header_slider_wrapper {
+    top: 30vh;
+  }
+
+  header .phone-label {
+    padding-top: 5px;
+  }
+
+  header .phone-label a {
+    font-size: 15px;
+  }
+
+  header .social-label:before {
+    margin-left: -10px;
+  }
+
+  header .header_logo {
+    margin-bottom: 10px;
+  }
+
+  .comand {
+    padding-bottom: 40px;
+  }
+
+  .comand .heading-sec {
+    text-align: center;
+  }
+
+  .comand .comand_left__text {
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .comand #comandDropArea {
+    margin-top: 20px;
+  }
+
+  .interactive {
+    display: none;
+  }
+
+  .portfolio .portfolio__photo {
+    display: none;
+  }
+
+  .portfolio .get_link_tel_wrapper {
+    margin: 15px 0;
+  }
+
+  .projects {
+    padding-top: 20px;
+  }
+
+  .projects .projects_heading {
+    padding-bottom: 20px;
+  }
+
+  .projects .projects_realization {
+    margin-bottom: 0;
+  }
+
+  .projects .projects_realization__item {
+    margin-bottom: 30px;
+  }
+
+  .projects .realization_calculator_input-inner {
+    margin-bottom: 20px;
+  }
+
+  .designs .designs_slider__item_inner {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+
+  .designs .designs_slider__item_inner_label {
+    opacity: 1;
+  }
+
+  .steps .steps_title_image {
+    display: none;
+  }
+
+  .steps .steps_name.desktop {
+    display: none;
+  }
+
+  .steps .steps_name.mobile {
+    display: block;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .steps .steps_content_item_number_wrapper {
+    margin-right: 10px;
+  }
+
+  .contract .contract_previews {
+    margin-top: 10px;
+    padding-left: 0;
+  }
+
+  .contract .contract_previews_item {
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  .contract .contract_previews_top .contract_previews_item:first-child,
+  .contract .contract_previews_down .contract_previews_item:first-child {
+    padding-right: 10px;
+  }
+
+  .contract .contract_previews_top .contract_previews_item:last-child,
+  .contract .contract_previews_down .contract_previews_item:last-child {
+    padding-left: 10px;
+  }
+
+  .footer {
+    margin-top: 400px;
+  }
+
+  .footer .footer_callback {
+    height: auto;
+    margin-top: -250px;
+  }
+
+  .footer .info-text_wrapper h5 {
+    font-size: 15px;
+  }
 }

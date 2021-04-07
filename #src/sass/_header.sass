@@ -1,6 +1,44 @@
 header
 	position: relative
 	min-height: 100vh
+	@media screen and ( max-width: 576px )
+		min-height: calc( 100vh + 250px)
+		.header_menu
+			padding-top: 10px
+			padding-bottom: 10px
+		.header_inner
+			height: calc( 80vh + 250px)
+		.social-wrapper, .contact-box
+			width: 50%
+		.social-wrapper, .header_contact
+			text-align: left
+		.header_contact
+			margin-left: 0
+		.social-box
+			flex-direction: row
+		.header_callback
+			left: 0
+		.info-text_wrapper
+			p
+				display: none
+			h5
+				font-size: 15px
+		.header_slider__item
+			h2
+				font-size: 20px
+			p
+				font-size: 15px
+				padding-top: 10px
+		.header_slider_wrapper
+			top: 30vh
+		.phone-label
+			padding-top: 5px
+			a
+				font-size: 15px
+		.social-label:before
+			margin-left: -10px
+		.header_logo
+			margin-bottom: 10px
 
 .header_scrolling
 	position: absolute

@@ -1,6 +1,22 @@
 .steps
 	overflow-x: hidden
 	padding-top: 70px
+	@media screen and ( max-width: 576px )
+		.steps_title_image
+			display: none
+		.steps_name.desktop
+			display: none
+		.steps_name.mobile
+			display: block
+			line-height: 25px
+			text-align: center
+		.steps_content_item_number_wrapper
+			margin-right: 10px
+		
+
+.steps_name.mobile
+	display: none
+
 .steps_wrapper
 	position: relative
 .steps_title
