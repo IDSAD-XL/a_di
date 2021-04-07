@@ -78,3 +78,9 @@ $('.interactive_plus').on('mouseenter', function () {
 	$(this).addClass('active')
 	$(`.${hintClass}`).addClass('active').removeClass('hide')
 })
+
+
+$('.contract_previews_item').on('mouseenter', function () {
+	$('.contract_previews_item').removeClass('active')
+	$(this).addClass('active')
+})
