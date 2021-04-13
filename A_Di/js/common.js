@@ -10,7 +10,7 @@ let cbModal = new bootstrap.Modal(document.getElementById('modalCallback'));
 function showModal() {
 	cbModal.show()
 }
-// setTimeout(showModal, 5000);
+setTimeout(showModal, 5000);
 let cbModalHtml = document.getElementById('modalCallback')
 let cbModalForm = document.getElementById('modalCbForm');
 cbModalForm.addEventListener('submit', function () {
